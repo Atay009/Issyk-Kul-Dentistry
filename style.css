@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1aafd4;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 140px;
+}
+
+header .logo img {
+    width: 120px;
+    cursor: pointer;
+}
+
+header .contact {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header .contact span {
+    margin-bottom: -27px;
+    font-size: 18px;
+    padding: 23px;
+}
+
+.main {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 36px;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.main h2 {
+    font-size: 26px;
+}
+
+.main p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #7f8c8d;
+}
+
+#gallery {
+    margin: 20px;
+}
+
+#gallery h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-wrapper {
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 3px solid #1aafd4;
+    box-shadow: 0 0 1px 1px #1aafd4;
+}
+
+#gallery p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#reviews {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 90px;
+}
+
+#reviews h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.patient-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.patient-feedback {
+    font-size: 14px;
+    color: #555;
+}
+
+.registration {
+    margin-top: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration h2 {
+    font-size: 28px;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.registration label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.registration input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registration button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1aafd4;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.registration button:hover {
+    background-color: #189ec0;
+}
+
+footer {
+    background-color: #0a89a8;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-info {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .working-hours h3, footer .social-media h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+footer .map iframe {
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer .map h3 {
+    margin-top: 14px;
+}
+
+footer .social-media {
+    margin-top: 40px;
+}
+
+footer .social-media a {
+    font-size: 19px;
+}
+
+footer .social-link {
+    color: #ecf0f1;
+    font-size: 16px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-link:hover {
+    color: #1aafd4;
+}
+ 
+@media (max-width: 1200px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .image-wrapper {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main h1 {
+        font-size: 28px;
+    }
+    .main h2 {
+        font-size: 20px;
+    }
+    .main p {
+        font-size: 18px;
+    }
+    #gallery {
+        margin: 10px;
+    }
+    .image-container {
+        display: block;
+        text-align: center;
+    }
+    .image-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    footer {
+        padding: 20px;
+    }
+    footer .footer-info {
+        padding: 0 10px;
+    }
+    footer .map iframe {
+        width: 100%;
+        height: 250px;
+    }
+    .registration {
+        width: 90%;
+    }
+    .after {
+        margin-top: 40px;
+    }
+    #reviews {
+        margin-top: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
